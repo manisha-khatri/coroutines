@@ -27,6 +27,7 @@ class LaunchCoroutineBuilderActivity : AppCompatActivity() {
     var btn12 : Button ?= null
     var btn13 : Button ?= null
     var btn14 : Button ?= null
+    var btn15 : Button ?= null
     var isCancelCoroutine : Boolean = false
 
 
@@ -80,6 +81,10 @@ class LaunchCoroutineBuilderActivity : AppCompatActivity() {
         btn14?.setOnClickListener {
             withTimeoutOrNullFunctions()
         }
+        btn15?.setOnClickListener {
+            val intent = Intent(this, CoroutineConcepts::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun initViews() {
@@ -97,6 +102,7 @@ class LaunchCoroutineBuilderActivity : AppCompatActivity() {
         btn12 = findViewById(R.id.btn12)
         btn13 = findViewById(R.id.btn13)
         btn14 = findViewById(R.id.btn14)
+        btn15 = findViewById(R.id.btn15)
     }
 
     var job : Job ?= null

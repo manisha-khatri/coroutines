@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".AsyncCoroutineBuilderActivity"/>
         <activity android:name=".RunBlockingCoroutineBuilderActivity"/>
+        <activity android:name=".CoroutineConcepts"/>
     </application>
 
 </manifest>
